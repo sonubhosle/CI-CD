@@ -1,4 +1,3 @@
-import { describe, it, expect } from 'vitest';
 import { add, subtract } from '../utils/math';
 
 describe('math utility', () => {
