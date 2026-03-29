@@ -1,4 +1,7 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import './globals.css';
+
 
 export const metadata = {
   title: 'CI/CD Project',
@@ -7,8 +10,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
